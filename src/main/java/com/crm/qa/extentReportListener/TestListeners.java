@@ -20,9 +20,10 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.crm.qa.base.TestBase;
 import com.crm.qa.testcases.LoginPageTest;
 
-public class TestListeners implements ITestListener
+public class TestListeners extends TestBase implements ITestListener
 {
 
 	private static ExtentReports extent = ExtentManager.createInstance();
