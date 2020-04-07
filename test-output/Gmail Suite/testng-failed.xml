@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Gmail Suite]" parallel="tests">
+  <test thread-count="1" name="free CRM App Test Cases(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.qa.testcases.HomPageTest">
+        <methods>
+          <include name="verifyContactsLinTest"/>
+          <include name="verifyUserNameTest"/>
+          <include name="tearDown"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomPageTest -->
+      <class name="com.crm.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="selectMultipleContactNameTest"/>
+          <include name="verifyContactsLabelTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="selectSingleContactNameTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="crmLogoImageTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- free CRM App Test Cases(failed) -->
+</suite> <!-- Failed suite [Gmail Suite] -->

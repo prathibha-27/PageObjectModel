@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="CRM Suite" annotations="JDK" parallel="tests">
+
+<listeners>
+		<listener class-name="com.crm.qa.extentReportListener.TestListeners"></listener>
+	</listeners>
+         
+  <test name="free CRM App Test Cases">
+	 <classes>
+	    <class name="com.crm.qa.testcases.LoginPageTest"/>
+	    <class name="com.crm.qa.testcases.HomPageTest"/>
+	   <class name="com.crm.qa.testcases.ContactsPageTest"/>
+	 </classes>
+   </test>
+</suite>
